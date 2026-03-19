@@ -437,7 +437,7 @@ const PrimaryButton = ({ onClick, children, disabled }: { onClick: () => void; c
   <button
     onClick={onClick}
     disabled={disabled}
-    className="flex-1 py-3.5 rounded-2xl bg-primary text-primary-foreground font-medium transition-all duration-300 hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed"
+    className="w-full py-4 rounded-2xl bg-primary text-primary-foreground font-medium text-base transition-all duration-300 hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed"
   >
     {children}
   </button>
@@ -446,7 +446,7 @@ const PrimaryButton = ({ onClick, children, disabled }: { onClick: () => void; c
 const SecondaryButton = ({ onClick, children }: { onClick: () => void; children: React.ReactNode }) => (
   <button
     onClick={onClick}
-    className="flex-1 py-3.5 rounded-2xl bg-card text-foreground font-medium border border-border transition-all duration-300 hover:bg-accent"
+    className="w-full py-4 rounded-2xl bg-card text-foreground font-medium text-base border border-border transition-all duration-300 hover:bg-accent"
   >
     {children}
   </button>
