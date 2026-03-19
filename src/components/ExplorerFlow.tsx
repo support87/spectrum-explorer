@@ -382,7 +382,7 @@ interface QuestionScreenProps {
   
 }
 
-const QuestionScreen = ({ title, category, categoryColor, options, selected, onSelect, onNext, showSkip, helperText, accent }: QuestionScreenProps) => (
+const QuestionScreen = ({ title, category, categoryColor, options, selected, onSelect, onNext, showSkip,  helperText }: QuestionScreenProps) => (
   <ScreenWrapper>
     {category && (
       <div className="mb-2">
