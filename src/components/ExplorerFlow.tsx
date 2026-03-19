@@ -138,7 +138,6 @@ const ExplorerFlow = () => {
             onSelect={(v) => setAnswer("checkin", v)}
             onNext={next}
             helperText={answers.checkin === "A bit overwhelmed" ? "Take your time. You can skip questions whenever you need." : undefined}
-            accent="pride-blue"
           />
         );
 
@@ -153,7 +152,6 @@ const ExplorerFlow = () => {
             onSelect={(v) => setAnswer("q1", v)}
             onNext={next}
             showSkip
-            accent="pride-red"
           />
         );
 
@@ -168,7 +166,6 @@ const ExplorerFlow = () => {
             onSelect={(v) => setAnswer("q2", v)}
             onNext={next}
             showSkip
-            accent="pride-red"
           />
         );
 
@@ -183,7 +180,6 @@ const ExplorerFlow = () => {
             onSelect={(v) => setAnswer("q3", v)}
             onNext={next}
             showSkip
-            accent="pride-orange"
           />
         );
 
@@ -198,7 +194,6 @@ const ExplorerFlow = () => {
             onSelect={(v) => setAnswer("q4", v)}
             onNext={next}
             showSkip
-            accent="pride-orange"
           />
         );
 
@@ -213,7 +208,6 @@ const ExplorerFlow = () => {
             onSelect={(v) => setAnswer("q5", v)}
             onNext={next}
             showSkip
-            accent="pride-yellow"
           />
         );
 
@@ -228,7 +222,6 @@ const ExplorerFlow = () => {
             onSelect={(v) => setAnswer("q6", v)}
             onNext={next}
             showSkip
-            accent="pride-yellow"
           />
         );
 
@@ -243,7 +236,6 @@ const ExplorerFlow = () => {
             onSelect={(v) => setAnswer("q7", v)}
             onNext={next}
             showSkip
-            accent="pride-green"
           />
         );
 
@@ -258,7 +250,6 @@ const ExplorerFlow = () => {
             onSelect={(v) => setAnswer("q8", v)}
             onNext={next}
             showSkip
-            accent="pride-green"
           />
         );
 
