@@ -105,11 +105,11 @@ const ExplorerFlow = () => {
       case 0:
         return (
           <ScreenWrapper>
-            <h1 className="text-2xl font-semibold text-foreground mb-4">Sexuality Spectrum Explorer</h1>
-            <p className="text-muted-foreground text-justified leading-relaxed">
-              Explore your attraction, at your own pace.
-            </p>
-            <div className="mt-8">
+            <div className="text-center">
+              <h1 className="text-2xl font-semibold text-foreground mb-4">Sexuality Spectrum Explorer</h1>
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                Explore your attraction, at your own pace.
+              </p>
               <PrimaryButton onClick={next}>Start</PrimaryButton>
             </div>
           </ScreenWrapper>
