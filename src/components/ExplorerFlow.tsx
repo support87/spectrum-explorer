@@ -136,9 +136,9 @@ const ExplorerFlow = () => {
                 It's okay if your feelings are still evolving or unclear.
               </p>
             </div>
-            <div className="flex gap-3">
-              <SecondaryButton onClick={prev}>Go Back</SecondaryButton>
+            <div className="space-y-3">
               <PrimaryButton onClick={next}>Continue</PrimaryButton>
+              <SecondaryButton onClick={prev}>Go Back</SecondaryButton>
             </div>
           </ScreenWrapper>
         );
