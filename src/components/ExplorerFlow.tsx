@@ -349,14 +349,26 @@ const ExplorerFlow = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col items-center">
-      <div className="w-full max-w-md mx-auto px-5 py-6 flex flex-col min-h-screen">
+    <div className="min-h-screen relative overflow-hidden flex flex-col items-center">
+      {/* Pride gradient background */}
+      <div className="fixed inset-0 -z-10 opacity-[0.07]" style={{
+        background: "linear-gradient(180deg, hsl(var(--pride-red)) 0%, hsl(var(--pride-orange)) 16%, hsl(var(--pride-yellow)) 33%, hsl(var(--pride-green)) 50%, hsl(var(--pride-blue)) 66%, hsl(var(--pride-purple)) 83%, hsl(var(--pride-red)) 100%)"
+      }} />
+      <div className="fixed inset-0 -z-10 bg-background/80" />
+
+      <div className="w-full max-w-md mx-auto px-5 py-8 flex flex-col min-h-screen">
         {screen >= 2 && screen <= 11 && (
           <div className="mb-6">
             <ProgressBar current={screen - 1} total={10} />
           </div>
         )}
-        <div className="flex-1 flex flex-col justify-center animate-fade-in">
+        <div
+          className={`flex-1 flex flex-col justify-center transition-all duration-250 ease-out ${
+            transitioning
+              ? "opacity-0 translate-y-3"
+              : "opacity-100 translate-y-0"
+          }`}
+        >
           {renderScreen()}
         </div>
         {screen < 12 && <Footer />}
