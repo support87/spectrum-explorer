@@ -379,7 +379,7 @@ interface QuestionScreenProps {
   onNext: () => void;
   showSkip?: boolean;
   helperText?: string;
-  accent?: string;
+  
 }
 
 const QuestionScreen = ({ title, category, categoryColor, options, selected, onSelect, onNext, showSkip, helperText, accent }: QuestionScreenProps) => (
