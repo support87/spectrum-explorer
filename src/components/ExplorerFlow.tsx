@@ -392,7 +392,7 @@ const QuestionScreen = ({ title, category, categoryColor, options, selected, onS
     <h2 className="text-lg font-semibold text-foreground mb-6 text-justified">{title}</h2>
     <div className="space-y-3 mb-6">
       {options.map((opt) => (
-        <OptionButton key={opt} label={opt} selected={selected === opt} onClick={() => onSelect(opt)} accentColor={accent} />
+        <OptionButton key={opt} label={opt} selected={selected === opt} onClick={() => onSelect(opt)} />
       ))}
     </div>
     {helperText && (
